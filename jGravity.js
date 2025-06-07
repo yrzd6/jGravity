@@ -50,6 +50,11 @@ FUNCTIONS
 
 */
 
+// Global variables
+var elements = new Array();
+var bodies = new Array();
+var properties = new Array();
+
 (function($){
     $.fn.extend({
         jGravity: function(options) {
@@ -120,9 +125,6 @@ var mouseX = 0;
 var mouseY = 0;
 var mouseOnClick = new Array();
 var timer = 0;
-var elements = new Array();
-var bodies = new Array();
-var properties = new Array();
 var orientation = { x: 0, y: 1 };
 
 // get browser dimensions
